@@ -1,0 +1,24 @@
+<%# app/views/flats/index.html.erb %>
+<div class = "container">
+  <h1>All our flats (<%= @flats.count %>)</h1>
+
+  <div class="cards" style="display:flex; column-gap: 10px">
+  <% @flats.each do |flat| %>
+    <div class="card" >
+      <div class="gray-background">
+        <h4><%= flat.name %></h4>
+        <p><%= flat.address %></p>
+        <div class="details" style="display:flex; column-gap: 10px">
+          <p><i class="fa-solid fa-user-group"></i> <%= flat.number_of_guests %></p>
+          <p><i class="fa-solid fa-euro-sign"></i> <%= flat.price_per_night %></p>
+        </div>
+      </div>
+      <div style="display:flex; column-gap: 10px">
+        <%= link_to "More info", flat_path(flat), :class => "link blue-font" %>
+        <%= link_to "Edit", edit_flat_path(flat), :class => "link yellow-font" %>
+        <%= link_to "Remove", flat_path(flat), :class => "link red-font", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<h1>hellllllloooooo</h1>
+<div class="form-container">
+  <div class="form-content">
+    <%= simple_form_for(@flat) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :number_of_guests %>
+      <%= f.input :price_per_night %>
+      <div class="d-flex justify-content-start gap-2">
+        <%= f.submit 'Create Flat', :class => 'btn-blue' %>
+        <%= link_to 'Cancel', flats_path, class: 'btn btn-red' %>
+      </div>
+    <% end %>
+    </div>
+</div>

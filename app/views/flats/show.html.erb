@@ -1,0 +1,32 @@
+<%# app/views/flats/show.html.erb %>
+
+<div class="container">
+
+<%# Navbar %>
+<%# Map as a banner %>
+
+<div class=description>
+  <div class="desc-element">
+    <h1><%= @flat.name %></h1>
+    <p><%= @flat.address %></p>
+  </div>
+  <div class="desc-element">
+    <h3>A bit more about this flat</h3>
+    <p><%= @flat.description %></p>
+  </div>
+
+  <div class="desc-element">
+    <h3>Details</h3>
+      <div class="details" style="display:flex; column-gap: 10px">
+        <p><i class="fa-solid fa-user-group"></i> <%= @flat.number_of_guests %></p>
+        <p><i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+      </div>
+  </div>
+</div>
+
+
+<%# Book form of the right %>
+<%# Share widdget on the right, below book form %>
+
+<%= link_to "Back to list of Flats", flats_path %>
+</div>

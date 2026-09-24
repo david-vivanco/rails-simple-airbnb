@@ -8,3 +8,91 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ .navbar {
+  justify-content: space-between;
+  background: lightgray;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.btn-white {
+  color: blue;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: normal;
+  background: white;
+  border: 1px solid blue;
+}
+
+.btn-blue {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: normal;
+  background: blue;
+  border: 1px solid white;
+}
+
+.btn-red {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: normal;
+  background: red;
+  border: 1px solid white;
+}
+
+.container {
+  /* margin: 5% auto; */
+  /* padding: 10% auto; */
+
+}
+
+#appName {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.form-container {
+  margin-top: 24px;
+  /* margin-left: 96px;
+  margin-right: 96px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-content {
+  width: 360px;
+  padding: 12px;
+  background-color: lightgrey;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.red-font {
+  color: red;
+}
+
+.blue-font {
+  color: blue;
+}
+
+.yellow-font {
+  color: yellow;
+}
+
+.gray-background {
+  background-color: lightgrey;
+}
+
+.card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
